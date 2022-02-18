@@ -1,0 +1,39 @@
+*{ margin: 0; 
+	padding: 0;
+	box-sizing: border;
+ font-family: 'Roboto', sans-serif;}
+
+.jumbotron button {background-color: transparent;}
+
+.jumbotron {
+    background-image: url('images/bg7.jpg');
+    background-size: cover;
+    height: 100%;
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  #ABT{background-image: url('images/bg8.jpg');
+  		background-size: cover;
+  		height: 100%;}
+
+#MP{background-image: url('images/bg9.jpg');
+  		background-size: cover;
+  		height: 100%;}
+
+ #foot{background-image: url('images/bg10.jpg');
+  		background-size: cover;
+  		height: 100%;
+  		}
+
+ #foot ul li a{font-family: 'Poiret One', cursive;
+ 				color: white;}
+
+ #and ul li {font-family: 'Poiret One', cursive;
+ 				color: white;}
+
+ #foot form label{font-family: 'Poiret One', cursive;}
+
+ nav a {font-family: 'Lobster', cursive;
+ 		font-size: 25px;}
+
+ 		
