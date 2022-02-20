@@ -6,7 +6,7 @@
 
 	<title>Capstone</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="style.css">
 
@@ -29,35 +29,48 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
 
 </head>
-<body class="bg-light ">
+<body>
 
 	<header>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light	">
-	  <a class="navbar-brand" href="#">Kalvin|Capstone</a>
+	<nav class="navbar navbar-expand-md navbar-light bg-secondary fixed-top	">
+	  <a class="navbar-brand" href="#"><img src="./images/kpr.jpg" class="m-1" id="kpr" >Kalvin</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 
 	  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-	    <ul class="navbar-nav ">
+	    <ul class="navbar-nav ml-auto">
 	     
 	      <li class="nav-item ">
 	        <a class="nav-link" href="#">Home</a>
 	      </li>
 	      <li class="nav-item ">
-	        <a class="nav-link" href="#ABT">About</a>
+	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#main">About</a>
 	      </li>
 	      <li class="nav-item ">
-	        <a class="nav-link" href="#Project">Projects</a>
+	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#section">Projects</a>
 	      </li>
 	      <li class="nav-item ">
-	        <a class="nav-link" href="#contact">Contact</a>
+	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#end">Contact</a>
 	      </li>
-	      <li class="nav-item ">
-	        <a class="nav-link" href="#footer">Footer</a>
-	      </li>
+	    
 	     
 	    
 	    </ul>
@@ -67,80 +80,234 @@
 </header>
 	
 
-	<div id="pic" class="jumbotron bg-dark" >
+
+<div id="car" class="mt-4 p-5 text-white rounded">
 
 
-	  <h1 class="display-4 text-center text-light">Hi! I'm Kalvin Philip Rosales</h1>
-	  <h1 class="display-4 text-center text-light">Web Developer</h1>
-	  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+	  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+	    <div class="carousel-indicators">
+	      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	     
+	    </div>
 	    <div class="carousel-inner">
 	      <div class="carousel-item active">
-	        <img src="./images/bangag.jpg" class="d-block w-50 h-25 img-fluid mx-auto rounded" alt="...">
+	      	<h1 class="text-center">Hi! I am Kalvin</h1>
+	      	
+	        <img src="./images/food.jpg" class="d-none d-md-block  img-fluid mx-auto rounded-circle img-responsive" alt="...">
+	        <div class="carousel-caption d-none d-md-block">
+	          
+	        </div>
 	      </div>
 	      <div class="carousel-item">
-	        <img src="./images/food.jpg" class="d-block w-50 h-50 img-fluid mx-auto rounded" alt="...">
+	      	<h1 class="text-center">A Web Developer</h1>
+	      	
+	        <img src="./images/party.jpg" class="d-none d-md-block  img-fluid mx-auto rounded-circle img-responsive" alt="...">
+	        <div class="carousel-caption d-none d-md-block">
+	          
+	        </div>
 	      </div>
 	      <div class="carousel-item">
-	        <img src="./images/party.jpg" class="d-block w-50 h-50 img-fluid mx-auto rounded" alt="...">
+	      	<h1 class="text-center">Let's have some fun</h1>
+	      	
+	        <img src="./images/bangag.jpg" class="d-none d-md-block  img-fluid mx-auto rounded-circle img-responsive" alt="...">
+	        <div class="carousel-caption d-none d-md-block">
+	        
+	        </div>
 	      </div>
 	     
 	    </div>
-	    <button class="carousel-control-prev btn btn-xs" type="button" data-target="#carouselExampleFade" data-slide="prev"  >
+	    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
 	      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	      <span class="sr-only">Previous</span>
+	      <span class="visually-hidden">Previous</span>
 	    </button>
-	    <button class="carousel-control-next btn btn-xs" type="button" data-target="#carouselExampleFade" data-slide="next" >
+	    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
 	      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	      <span class="sr-only">Next</span>
+	      <span class="visually-hidden">Next</span>
 	    </button>
 	  </div>
 
-	  <p class="text-center text-light">Let akrbgkjcds</p>
 
-		<div class="col-12">
-				<div class="row d-flex	justify-content-center	">	  
-
-	  				<div class="m-2">
-	    				<a class="btn btn-secondary rounded text-center" href="#Aboutme" role="button">About me</a>
-	  				</div>
-	  
-	 			    <div class="m-2">
-	    				<a class="btn btn-secondary rounded text-center" href="#Project" role="button">View my Projects</a>
-	 				</div>
-
-	 				<div class="m-2">
-	 				   	<a class="btn btn-secondary rounded text-center" href="#contact" role="button">Contacts</a>
-	 				</div>
-	 			</div>
-	    
-	    </div>
-    </div>
-
-
-	<!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-	  <div class="carousel-inner">
-	    <div class="carousel-item active">
-	      <img src="./images/airplane.jpg" class="d-block w-50 h-50 img-fluid mx-auto" alt="...">
-	    </div>
-	    <div class="carousel-item">
-	      <img src="./images/food.jpg" class="d-block w-50 h-50 img-fluid mx-auto" alt="...">
-	    </div>
-	    <div class="carousel-item">
-	      <img src="./images/party.jpg" class="d-block w-50 h-50 img-fluid mx-auto" alt="...">
-	    </div>
-	    <div class="carousel-item">
-	      <img src="./images/snake.jpg" class="d-block w-50 h-50 img-fluid mx-auto" alt="...">
-	    </div>
 	  </div>
-	  <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
-	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </button>
-	  <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
-	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </button>
-	</div> -->
+
+
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+
+				<div class="col-12 d-flex justify-content-center flex-wrap">
+									<!-- Button trigger modal -->
+				
+									<!-- Modal -->
+									<div class="modal fade" id="main" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-fullscreen">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top	">
+									        	  <a class="navbar-brand" href="#" data-bs-dismiss="modal"><img src="./images/kpr.jpg" class="m-1" id="kpr" >Kalvin</a>
+									        	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									        	    <span class="navbar-toggler-icon"></span>
+									        	  </button>
+
+									        	  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+									        	    <ul class="navbar-nav ml-auto">
+									        	     
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-dismiss="modal">Home</a>
+									        	      </li>
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#main" data-bs-dismiss="modal">About</a>
+									        	      </li>
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#section" data-bs-dismiss="modal">Projects</a>
+									        	      </li>
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#end" data-bs-dismiss="modal">Contact</a>
+									        	      </li>
+									        	     
+									        	     
+									        	    
+									        	    </ul>
+									        	    
+									        	  </div>
+									        	</nav>
+									      </div>
+									      <div class="modal-body mt-3">
+									        <div id="ABT" >
+									        	<div class="m-3">
+									        		<h1 id="Aboutme"class="text-center con">About me</h1>
+									        		<p class="text-center mx-auto w-50 abc">Highly motivated full-stack developer with ability to learn and collaborate in rapidly changing environments and compositions. Eager to tackle web development/design challenges to achieve lasting impacts on user experiences</p>
+									        	</div>	
+
+									        	<div class="container-fluid mt-5 ">
+									        		<div class="row mx-auto justify-content-center">
+									        			<div class="col-12 col-md-6 col-lg-5 col-xlg-3">
+									        				<h2 class="m-2 p-2 ml-3 con">Biography</h2>
+									        				<p class="m-2 p-2 ml-3">I am a graduate student in the Engineering Department at the University of Santo Tomas and graduated in March 2014. I have a bachelor's  degree in Electronics Engineering and passed my licensure exam in Electronics technician and Civil service Exam.</p>
+									        				<p class="m-2 p-2 ml-3">Previously worked as a sales agent at Termax Pro as a sales agent and a UPS Proactive Response customer service representative at Alorica Inc. where I managed high value shipments and critical packages that are time/temperature-sensitive, lifesaving, and healthcare related. I supervised and coordinated wwith the package operations team to ensure the packages werre delivered in a timely manner</p>
+									        				<p class="m-2 p-2 ml-3">Currently a tech career shifter eager to create and design amazing websites. Taking complex problems and turning them into a simple and beautiful designs. I also love the logic and structure of coding and always strive to write elegant and efficient code, whether it be HTML, CSS, Bootstrap etc.</p>
+									        			
+									        				
+									        				
+									        			</div>
+									        			<div class="col-12 col-md-6 col-lg-5 col-xlg-3">
+									        				<img src="./images/grad.jpg" class="img-fluid mx-auto d-flex justify-content-center m-2 p-2 mr-3">
+									        			</div>
+									        		</div>
+									        	</div>
+									        </div>
+									        <div class="container-fluid">
+
+									        	<h2 id="skill"class="text-center m-3 p-5 con">My Skills</h2>
+									            <!-- Core Tools Section Start -->
+									            <h3 class="text-center m-3">Core Tools</h3>
+
+									            <div class="d-flex flex-column"> <!--text-center -->
+									                <div class="d-flex justify-content-center ">
+									                    <img width="150" src="images/logo-html5.png"/>
+									                </div>
+									                <div class="d-flex justify-content-center">
+									                    <img width="150" src="images/logo-css3.png"/>
+									                    <img width="150" src="images/logo-javascript.png"/>
+									                </div>
+									            </div>
+									            <!-- Core Tools Section End -->
+									            
+									            <!-- Other Tools Section Start -->
+									            <h3 class="text-center m-3">Other Tools</h3>
+
+									            <div class="d-flex flex-md-column">
+									                <div class="d-md-flex justify-content-center ">
+									                    <img width="150" src="images/logo-mongodb.png"/>
+									                    <img width="150" src="images/logo-nodejs.png"/>
+									                    <img width="150" src="images/logo-expressjs.png"/>
+									                    <img width="150" src="images/logo-react.png"/>
+									                    <img width="150" src="images/logo-heroku.png"/>
+									                </div>
+									                <div class="mt-3 d-md-flex justify-content-center">
+									                    <img width="150" src="images/logo-git.png"/>
+									                    <img width="150" src="images/logo-sublime-text-3.png"/>
+									                    <img width="150" src="images/logo-postman.png"/>
+									                    <img width="150" src="images/logo-gitlab-ci-cd.png"/>
+									                </div>
+									            </div>
+									            <!-- Other Tools Section End -->
+									            
+									        </div>
+									        <!-- Tools Section End -->
+
+
+									      </div>
+					<div class="modal-footer p-0 m-0">
+					
+					<footer  class="bg-secondary  rounded col-12 foot">
+					 <div class="container-fluid text-light">
+							<div class="row text-justify">
+								<div class="col-12 col-md-4 justify-content-end mt-2">
+									
+								
+									<ul class="list-unstyled">
+														<li><a href="" data-bs-dismiss="modal">Home</a></li>
+														<li><a href="#main" data-bs-toggle="modal"  data-bs-dismiss="modal"  >About Me</a></li>
+														<li><a href="#section" data-bs-toggle="modal"  data-bs-dismiss="modal">My Projects</a></li>
+														<li><a href="" data-bs-dismiss="modal" >Slides</a></li>
+														<li><a href="#end" data-bs-toggle="modal"  data-bs-dismiss="modal">Contact</a></li>
+									</ul>
+
+								
+							</div>
+
+							<div id="and" class="col-12 col-md-4 mt-2">
+									
+								
+									<ul class="list-unstyled">
+										<li> </li>
+										<li>kalvinphiliprosales@gmail.com</li>
+										<li>kalvinphilip_r@yahoo.com</li>
+										<li>09273989399 (globe)</li>
+										<li>(02) 368 38 70</li>
+									</ul>
+							</div>
+
+							<div class="col-12 col-md-4">
+
+
+								
+ 
+								      <div class="col-12 mt-2">
+								      	<a href="https://www.facebook.com/kalvinphilip.rosales"><img src="./images/fbicon.jpg"></a>
+								      	<a href="https://www.instagram.com/kalvinpog/"><img src="./images/instaicon.jpg"></a>
+								      	<a href="https://www.youtube.com/channel/UCKJUUecoqbGHyUN9879nHsw"><img src="./images/yticon.jpg"></a>
+								      	<a href="https://twitter.com/UtongXi"><img src="./images/twiticon.jpg"></a>
+								      	<a href="https://www.snapchat.com"><img src="./images/snapicon.jpg">
+								      </div>
+
+								     
+
+
+
+					 	
+					 	                   
+
+
+
+
+							</div>
+
+						</div>
+					</footer>
+									      </div>
+									    </div>
+									  </div>
+									</div>
+
+				 
 
 
 
@@ -150,26 +317,316 @@
 
 
 
-<div id="ABT" >
-	<div class="mb-5">
-		<h1 id="Aboutme"class="text-center">About me</h1>
-		<p class="text-center mx-auto w-50 ">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Molestiae perspiciatis odio culpa voluptatem optio unde veritatis aut ratione quos enim nam quae cupiditate dolorum, impedit doloribus ullam quod, ipsa? Porro.</p>
-	</div>	
+				 
 
-	<div class="container-fluid mt-5 mb-5">
-		<div class="row mx-auto justify-content-center">
-			<div class="col-12 col-md-6 col-lg-5 col-xlg-3">
-				<h2 class="m-2 p-2 ml-3">bla bla bla bla</h2>
-				<p class="m-2 p-2 ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ex quis facere voluptatum dolorem nisi, corporis fugiat earum perspiciatis fuga eaque iure delectus eveniet libero cupiditate incidunt nulla odio cumque.</p>
-			
-				<h2 class="m-2 p-2 ml-3">bla bla bla bla</h2>
-				<p class="m-2 p-2 ml-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio perspiciatis consequuntur laudantium hic quaerat est suscipit sint, at! Mollitia, voluptatum eaque reprehenderit. Dolor praesentium numquam dicta sed nobis ullam veniam!</p>
-			</div>
-			<div class="col-12 col-md-6 col-lg-5 col-xlg-3">
-				<img src="./images/grad.jpg" class="img-fluid h-350 w-350 mx-auto d-flex justify-content-center m-2 p-2 mr-3">
-			</div>
-		</div>
-	</div>
+									<!-- Button trigger modal -->
+								
+
+									<!-- Modal -->
+									<div class="modal fade" id="section" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-fullscreen">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top	">
+									        	  <a class="navbar-brand" href="#" data-bs-dismiss="modal"><img src="./images/kpr.jpg" class="m-1" id="kpr" >Kalvin</a>
+									        	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									        	    <span class="navbar-toggler-icon"></span>
+									        	  </button>
+
+									        	  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+									        	    <ul class="navbar-nav ml-auto">
+									        	     
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-dismiss="modal">Home</a>
+									        	      </li>
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#main" data-bs-dismiss="modal">About</a>
+									        	      </li>
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#section" data-bs-dismiss="modal">Projects</a>
+									        	      </li>
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#end" data-bs-dismiss="modal">Contact</a>
+									        	      </li>
+									        	     
+									        	    
+									        	    </ul>
+									        	    
+									        	  </div>
+									        	</nav>
+									      </div>
+									      <div class="modal-body">
+									        <div id="MP">
+									        	<h1 id="Project"class="text-center m-5 con">My Projects</h1>
+
+									        	<div class="container-fluid">
+									        		<div class="row">
+									        			<div class="col-12 col-md-4 p-4">
+									        				<img src="./images/grad.jpg" class="mx-auto d-flex justify-content-center img-fluid rounded-circle m-3 mb-4">
+									        				<h2 class="text-center">Capstone Project 1 Lorem ipsum sit amet</h2>
+									        				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis sed, reiciendis. Dolorem laudantium facere nemo esse commodi, exercitationem sed, autem corrupti perferendis, impedit mollitia qui est tempora natus, placeat.</p>
+
+									        			</div>
+									        			<div class="col-12 col-md-4 p-4">
+									        				<img src="./images/grad.jpg" class="mx-auto d-flex justify-content-center img-fluid rounded-circle m-3 mb-4">
+									        				<h2 class="text-center">Capstone Project 1 Lorem ipsum sit amet</h2>
+									        				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis sed, reiciendis. Dolorem laudantium facere nemo esse commodi, exercitationem sed, autem corrupti perferendis, impedit mollitia qui est tempora natus, placeat.</p>
+									        				
+									        			</div>
+									        			<div class="col-12 col-md-4 p-4">
+									        				<img src="./images/grad.jpg" class="mx-auto d-flex justify-content-center img-fluid rounded-circle m-3 mb-4">
+									        				<h2 class="text-center">Capstone Project 1 Lorem ipsum sit amet</h2>
+									        				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis sed, reiciendis. Dolorem laudantium facere nemo esse commodi, exercitationem sed, autem corrupti perferendis, impedit mollitia qui est tempora natus, placeat.</p>
+									        				
+									        			</div>
+									        		</div>
+									        	</div>
+									        </div>	
+									      </div>
+									
+									<footer class="bg-secondary p-1 rounded col-12 foot">
+									 <div class="container-fluid text-light">
+											<div class="row text-justify">
+												<div class="col-12 col-md-4 justify-content-end t mt-2">
+													
+												
+													<ul class="list-unstyled">
+																<li><a href="" data-bs-dismiss="modal" >Home</a></li>
+																<li><a href="#main" data-bs-toggle="modal"   data-bs-dismiss="modal">About Me</a></li>
+																<li><a href="#section" data-bs-toggle="modal"  data-bs-dismiss="modal">My Projects</a></li>
+																<li><a href="" data-bs-dismiss="modal">Slides</a></li>
+																<li><a href="#end" data-bs-toggle="modal"  data-bs-dismiss="modal">Contact</a></li>
+													</ul>
+
+												
+											</div>
+
+											<div id="and" class="col-12 col-md-4 mt-2">
+													
+												
+													<ul class="list-unstyled">
+														<li> </li>
+														<li>kalvinphiliprosales@gmail.com</li>
+														<li>kalvinphilip_r@yahoo.com</li>
+														<li>09273989399 (globe)</li>
+														<li>(02) 368 38 70</li>
+													</ul>
+											</div>
+
+											<div class="col-12 col-md-4">
+
+
+												
+
+												      <div class="col-12 mt-2">
+												      	<a href="https://www.facebook.com/kalvinphilip.rosales"><img src="./images/fbicon.jpg"></a>
+												      	<a href="https://www.instagram.com/kalvinpog/"><img src="./images/instaicon.jpg"></a>
+												      	<a href="https://www.youtube.com/channel/UCKJUUecoqbGHyUN9879nHsw"><img src="./images/yticon.jpg"></a>
+												      	<a href="https://twitter.com/UtongXi"><img src="./images/twiticon.jpg"></a>
+												      	<a href="https://www.snapchat.com"><img src="./images/snapicon.jpg">
+												      </div>
+
+												     
+
+
+
+									 	
+									 	                   
+
+
+
+
+											</div>
+
+										</div>
+									</footer>
+									      </div>
+									    </div>
+									  </div>
+									</div>
+
+				
+
+
+
+
+
+
+
+
+
+					
+
+									<!-- Button trigger modal -->
+								
+
+									<!-- Modal -->
+									<div class="modal fade " id="end" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-fullscreen">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top	">
+									        	  <a class="navbar-brand" href="#" data-bs-dismiss="modal"><img src="./images/kpr.jpg" class="m-1" id="kpr" >Kalvin</a>
+									        	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									        	    <span class="navbar-toggler-icon"></span>
+									        	  </button>
+
+									        	  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+									        	    <ul class="navbar-nav ml-auto">
+									        	     
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-dismiss="modal">Home</a>
+									        	      </li>
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#main" data-bs-dismiss="modal">About</a>
+									        	      </li>
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#section" data-bs-dismiss="modal">Projects</a>
+									        	      </li>
+									        	      <li class="nav-item ">
+									        	        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#end" data-bs-dismiss="modal">Contact</a>
+									        	      </li>
+									        	 
+									        	    
+									        	    </ul>
+									        	    
+									        	  </div>
+									        	</nav>
+									      </div>
+									      <div class="modal-body ">
+									        <h1 id="contact" class="text-center m-4 con">Contacts</h1>
+									        <p class="text-center mx-auto w-50">Highly motivated full-stack developer with ability to learn and collaborate in rapidly changing environments and compositions. Eager to tackle web development/design challenges to achieve lasting impacts on user experiences</p>
+
+									        <div class="container-fluid m-3 ">
+									        	<div class="row ">
+									        		<div class="col-12 col-md-6 ">
+									        			<form>
+									        				<div class="form-group ">
+									        				
+									        				  <input type="email" class="form-control m-2" id="Username" placeholder="Username">
+									        				</div>
+
+									        				<div class="form-group">
+									        				
+									        				  <input type="email" class="form-control m-2" id="Email" placeholder="Email">
+									        				</div>
+
+									        				<div class="form-group">
+									        				
+									        				  <input type="email" class="form-control m-2" id="Contact" placeholder="Contact number">
+									        				</div>
+
+
+									        			  
+									        			  
+									        			    
+									        			 
+
+									        			  <div class="form-group">
+									        			      
+									        			      <textarea class="form-control m-2" id="Message" rows="5" placeholder="Message"></textarea>
+									        			    </div>
+									        			 
+									        			  <button type="submit" class="btn btn-primary m-2">Send Message</button>
+									        			</form>
+									        		</div>
+
+
+
+									        		<div class="col-12 col-md-6">
+									        				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2690.7003691905797!2d121.11970093173167!3d14.623374007034206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1644989173802!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="img-fluid w-75 h-75 m-2"></iframe>
+
+
+
+									        			
+									        		</div>
+									        	</div>
+									        </div>
+															      <div class="container-fluid">
+															      	<div class="row">
+															      		<div class="col-12 col-md-6">
+																	        	<h2 class="con">Contact Me</h2>
+																	        	<p>Let's create some fun websites</p>
+
+																	        	<h2 class="con">Address</h2>
+																	        	<p>54 Alfred st. Kingsville subd Brgy. Mayamot Antipolo, Rizal, Philippines</p>
+															        	</div>
+
+															        	<div class="col-12 col-md-6">
+																		        <h2 class="con">Contact Info</h2>
+																		        <p>kalvinphiliprosales@gmail.com</p>
+																		        <p>09273989399 (globe)</p>
+																		        <p>02 (368 38 70)</p>
+																		    </div>
+															      </div>
+															      </div>
+									      </div>
+									      <div class="modal-footer p-0 m-0">
+									
+									<footer  class="bg-secondary rounded col-12 foot">
+									 <div class="container-fluid text-light">
+											<div class="row text-justify">
+												<div class="col-12 col-md-4 justify-content-end  mt-2">
+													
+												
+													<ul class="list-unstyled">
+																				<li><a href="" data-bs-dismiss="modal">Home</a></li>
+																				<li><a href="#main" data-bs-toggle="modal"  data-bs-dismiss="modal" >About Me</a></li>
+																				<li><a href="#section" data-bs-toggle="modal"  data-bs-dismiss="modal">My Projects</a></li>
+																				<li><a href="" data-bs-dismiss="modal">Slides</a></li>
+																				<li><a href="#end" data-bs-toggle="modal"  data-bs-dismiss="modal">Contact</a></li>
+													</ul>
+
+												
+											</div>
+
+											<div id="and" class="col-12 col-md-4 mt-2">
+													
+												
+													<ul class="list-unstyled">
+														<li> </li>
+														<li>kalvinphiliprosales@gmail.com</li>
+														<li>kalvinphilip_r@yahoo.com</li>
+														<li>09273989399 (globe)</li>
+														<li>(02) 368 38 70</li>
+													</ul>
+											</div>
+
+											<div class="col-12 col-md-4">
+
+
+												
+
+												      <div class="col-12 mt-2">
+												      	<a href="https://www.facebook.com/kalvinphilip.rosales"><img src="./images/fbicon.jpg"></a>
+												      	<a href="https://www.instagram.com/kalvinpog/"><img src="./images/instaicon.jpg"></a>
+												      	<a href="https://www.youtube.com/channel/UCKJUUecoqbGHyUN9879nHsw"><img src="./images/yticon.jpg"></a>
+												      	<a href="https://twitter.com/UtongXi"><img src="./images/twiticon.jpg"></a>
+												      	<a href="https://www.snapchat.com"><img src="./images/snapicon.jpg">
+												      </div>
+
+												     
+
+
+
+									 	
+									 	                   
+
+
+
+
+											</div>
+
+										</div>
+									</footer>
+									      </div>
+									    </div>
+									  </div>
+									</div>
+
+           </div>
+
+</div>
 </div>
 
 
@@ -180,85 +637,23 @@
 
 
 
-<div id="MP">
-	<h1 id="Project"class="text-center m-5">My Projects</h1>
-
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-12 col-md-4 p-4">
-				<img src="./images/grad.jpg" class="mx-auto d-flex justify-content-center img-fluid rounded-circle m-3 mb-4">
-				<h2 class="text-center">Capstone Project 1 Lorem ipsum sit amet</h2>
-				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis sed, reiciendis. Dolorem laudantium facere nemo esse commodi, exercitationem sed, autem corrupti perferendis, impedit mollitia qui est tempora natus, placeat.</p>
-
-			</div>
-			<div class="col-12 col-md-4 p-4">
-				<img src="./images/grad.jpg" class="mx-auto d-flex justify-content-center img-fluid rounded-circle m-3 mb-4">
-				<h2 class="text-center">Capstone Project 1 Lorem ipsum sit amet</h2>
-				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis sed, reiciendis. Dolorem laudantium facere nemo esse commodi, exercitationem sed, autem corrupti perferendis, impedit mollitia qui est tempora natus, placeat.</p>
-				
-			</div>
-			<div class="col-12 col-md-4 p-4">
-				<img src="./images/grad.jpg" class="mx-auto d-flex justify-content-center img-fluid rounded-circle m-3 mb-4">
-				<h2 class="text-center">Capstone Project 1 Lorem ipsum sit amet</h2>
-				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis sed, reiciendis. Dolorem laudantium facere nemo esse commodi, exercitationem sed, autem corrupti perferendis, impedit mollitia qui est tempora natus, placeat.</p>
-				
-			</div>
-		</div>
-	</div>
-</div>	
 
 
 
 
 
 
-	<h1 id="contact" class="text-center m-5">Contact</h1>
-	<p class="text-center mx-auto w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, delectus, assumenda non exercitationem quam a deleniti culpa inventore eligendi dolor in! Nam odio quia ad incidunt neque iure odit quasi!</p>
-
-	<div class="container-fluid m-5">
-		<div class="row">
-			<div class="col-12 col-md-6">
-				<form>
-					<div class="form-group">
-					
-					  <input type="email" class="form-control" id="Username" placeholder="Username">
-					</div>
-
-					<div class="form-group">
-					
-					  <input type="email" class="form-control" id="Email" placeholder="Email">
-					</div>
-
-					<div class="form-group">
-					
-					  <input type="email" class="form-control" id="Contact" placeholder="Contact number">
-					</div>
-
-
-				  
-				  
-				    
-				 
-
-				  <div class="form-group">
-				      
-				      <textarea class="form-control" id="Message" rows="5" placeholder="Message"></textarea>
-				    </div>
-				 
-				  <button type="submit" class="btn btn-primary">Send Message</button>
-				</form>
-			</div>
 
 
 
-			<div class="col-12 col-md-6">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2690.7003691905797!2d121.11970093173167!3d14.623374007034206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1644989173802!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="img-fluid w-75 h-75"></iframe>
 
 
-				
-			</div>
-		</div>
-	</div>
+
+
+
+
+
+	
 
 
 
@@ -279,24 +674,24 @@
 
 
 
-<footer id="foot" class="bg-secondary p-1 rounded">
- <div id="footer"class="container-fluid text-light">
+<footer  class="bg-secondary p-1 rounded col-12 foot fixed-bottom">
+ <div class="container-fluid text-light">
 		<div class="row text-justify">
-			<div class="col-6 col-md-3 justify-content-end t mt-2">
+			<div class="col-12 col-md-4 col-xs-4 justify-content-end t mt-2">
 				
 			
 				<ul class="list-unstyled">
-					<li><a href="#">Home</a></li>
-					<li><a href="#ABT">About Me</a></li>
-					<li><a href="#MP">My Projects</a></li>
-					<li><a href="#pic">Slides</a></li>
-					<li><a href="#contact">Contact</a></li>
+															<li><a href="" data-bs-dismiss="modal">Home</a></li>
+															<li><a href="#main" data-bs-toggle="modal"  data-bs-dismiss="modal" >About Me</a></li>
+															<li><a href="#section" data-bs-toggle="modal"  data-bs-dismiss="modal">My Projects</a></li>
+															<li><a href="" data-bs-dismiss="modal">Slides</a></li>
+															<li><a href="#end" data-bs-toggle="modal"  data-bs-dismiss="modal">Contact</a></li>
 				</ul>
 
 			
 		</div>
 
-		<div id="and" class="col-6 col-md-3 mt-2">
+		<div id="and" class="col-12 col-xs-4 col-md-4 mt-2">
 				
 			
 				<ul class="list-unstyled">
@@ -308,25 +703,16 @@
 				</ul>
 		</div>
 
-		<div class="col-12 col-md-6">
+		<div class="col-12 col-md-4">
 
 
-			<form class="mt-2">
-				<label for="exampleInputEmail1">Get our news letter</label>
-			       <div class="form-inline">
-			    
-			    <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
 			
-		
-			
-			 
-			      <button type="submit" class="btn btn-secondary m-2">Subscribe</button>
 
-			      <div class="col-12">
-			      	<a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1652997316&extra_1=s%7Cc%7C318266661495%7Ce%7Cfacebook%27%7C&placement=&creative=318266661495&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1652997316%26adgroupid%3D66388763954%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D9060945%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQiAu62QBhC7ARIsALXijXTriWGsQy1eCYOvQQxgAF7Qupuo6rmZH4dafNXYbMZbNess6hgfOtEaAvjIEALw_wcB"><img src="./images/fbicon.jpg"></a>
-			      	<a href="https://www.instagram.com"><img src="./images/instaicon.jpg"></a>
-			      	<a href="https://www.youtube.com"><img src="./images/yticon.jpg"></a>
-			      	<a href="https://www.twitter.com"><img src="./images/twiticon.jpg"></a>
+			      <div class="col-12 col-xs-4">
+			      	<a href="https://www.facebook.com/kalvinphilip.rosales"><img src="./images/fbicon.jpg"></a>
+			      	<a href="https://www.instagram.com/kalvinpog/"><img src="./images/instaicon.jpg"></a>
+			      	<a href="https://www.youtube.com/channel/UCKJUUecoqbGHyUN9879nHsw"><img src="./images/yticon.jpg"></a>
+			      	<a href="https://twitter.com/UtongXi"><img src="./images/twiticon.jpg"></a>
 			      	<a href="https://www.snapchat.com"><img src="./images/snapicon.jpg">
 			      </div>
 
@@ -334,8 +720,21 @@
 
 
 
-			  </div>
-			</form>
+ 	
+ 	                   
+
+
+
+
+		</div>
+
+	</div>
+</footer>
+
+
+
+
+
 
  	
  	                   
@@ -358,9 +757,6 @@
 
 
 
-
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

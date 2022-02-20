@@ -3,37 +3,55 @@
 	box-sizing: border;
  font-family: 'Roboto', sans-serif;}
 
-.jumbotron button {background-color: transparent;}
+ #kpr{height: 40px;
+ 		width: 55px;
+ 		margin-right: 5px;}
+body {background-image: url('images/bg7.jpg');}
 
-.jumbotron {
-    background-image: url('images/bg7.jpg');
-    background-size: cover;
-    height: 100%;
-    font-family: 'Permanent Marker', cursive;
-  }
+  #car{ font-family: 'Permanent Marker', cursive; 
+  	background-image: url('images/bg7.jpg');
+  	background-size: cover;
+    height: 100%;}
 
-  #ABT{background-image: url('images/bg8.jpg');
+#car img {height: 40%;
+			width: 40%;}
+
+#car h1{font-family: 'Kaushan Script', cursive;
+       font-size: 80px;
+   		margin:  10px;}
+
+.modal-body{background-image: url('images/bg8.jpg');
   		background-size: cover;
   		height: 100%;}
+		
+#Aboutme {
+font-family: 'Kaushan Script', cursive;
+}
 
-#MP{background-image: url('images/bg9.jpg');
+
+.abc {font-family: 'Roboto', sans-serif;}
+
+.con {font-family: 'Kaushan Script', cursive}
+
+ .foot{background-image: url('images/bg10.jpg');
   		background-size: cover;
-  		height: 100%;}
+  		font-size:  8px;
+  		padding: 0;
+  		margin: 0;
+  		width: 100%;}
 
- #foot{background-image: url('images/bg10.jpg');
-  		background-size: cover;
-  		height: 100%;
-  		}
-
- #foot ul li a{font-family: 'Poiret One', cursive;
+ .foot ul li a{font-family: 'Poiret One', cursive;
  				color: white;}
 
  #and ul li {font-family: 'Poiret One', cursive;
  				color: white;}
 
- #foot form label{font-family: 'Poiret One', cursive;}
+ .foot form label{font-family: 'Poiret One', cursive;}
+
+
 
  nav a {font-family: 'Lobster', cursive;
  		font-size: 25px;}
 
  		
+ 
